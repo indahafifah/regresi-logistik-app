@@ -11,8 +11,8 @@ st.title("Analisis Kelayakan Peminjaman Anggota Koperasi")
 # Input dari user
 status_anggota = st.selectbox("Status Anggota", ["Anggota Biasa", "Anggota Luar Biasa"])
 status_pinjaman = st.selectbox("Status Pinjaman", ["New Order", "Repeat Order"])
-jumlah_simpanan = st.number_input("Jumlah Simpanan", min_value=0.0, format="%.2f")
-jumlah_pinjam = st.number_input("Jumlah Pinjam", min_value=0.0, format="%.2f")
+jumlah_simpanan = st.number_input("Jumlah Simpanan (juta)", min_value=0.0, format="%.2f")
+jumlah_pinjam = st.number_input("Jumlah Pinjam (juta)", min_value=0.0, format="%.2f")
 jangka_waktu = st.number_input("Jangka Waktu (bulan)", min_value=1)
 
 # Ubah input ke format model
