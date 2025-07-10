@@ -32,3 +32,5 @@ if st.button("Cek Kelayakan"):
     hasil = "Layak" if pred == 1 else "Tidak Layak"
     st.success(f"Hasil Prediksi: {hasil}")
     st.info(f"Probabilitas Kelulusan: {prob:.2f}")
+    persentase = round(prob * 100, 2)
+    st.markdown(f"📌 Berdasarkan hasil prediksi, **ada {persentase}% kemungkinan anggota ini layak diberi pinjaman**.")
